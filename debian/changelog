@@ -1,5 +1,157 @@
-template-repository (1.0-1) unstable; urgency=medium
+raft (0.22.1-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Free Ekanayaka <freee@debian.org>  Fri, 29 Mar 2024 09:35:11 +0000
+
+raft (0.22.0-1) unstable; urgency=medium
+
+  [ Free Ekanayaka ]
+  * New upstream release (closes: #1062770)
+  * d/libraft0.symbols: Update public APIs
+
+  [ Mathias Gibbens ]
+  * d/control: Update Homepage link
+
+ -- Free Ekanayaka <freee@debian.org>  Fri, 09 Feb 2024 13:15:42 +0000
+
+raft (0.21.0-1) unstable; urgency=medium
+
+  [ Free Ekanayaka ]
+  * New upstream release
+  * d/libraft0.symbols: Update public APIs
+
+  [ Mathias Gibbens ]
+  * Fixup d/changelog
+  * Cleanup d/libraft0.symbols
+
+ -- Mathias Gibbens <gibmat@debian.org>  Fri, 02 Feb 2024 19:26:01 +0000
+
+raft (0.20.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Free Ekanayaka <freee@debian.org>  Sat, 27 Jan 2024 14:08:31 +0000
+
+raft (0.19.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Free Ekanayaka <freee@debian.org>  Wed, 03 Jan 2024 19:32:04 +0000
+
+raft (0.19.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/libraft0.symbols: Add new symbols from 0.19.0
+
+ -- Free Ekanayaka <freee@debian.org>  Wed, 03 Jan 2024 14:11:21 +0000
+
+raft (0.18.3-1) unstable; urgency=medium
+
+  * New upstream release (closes: #1057438)
+
+ -- Free Ekanayaka <freee@debian.org>  Thu, 14 Dec 2023 11:32:39 +0000
+
+raft (0.17.7-1) unstable; urgency=medium
+
+  [ Free Ekanayaka ]
+  * Build docs using sphinx
+  * Added myself as maintainer and Laszlo as uploader
+  * Move upstream from canonical/raft to cowsql/raft (closes: #1053663)
+  * Add Vcs info to debian/control
+  * Library transition libraft2 -> libraft0, matching upstream soname
+
+  [ Mathias Gibbens ]
+  * d/copyright: Cleanup duplicate Copyright field; add Free and myself to debian/* stanza
+  * Remove unused lintian overrides
+  * Add d/upstream/metadata
+  * d/control: debhelper-compat v13, Standards-version 4.6.2, and add myself as an uploader
+  * Add d/gbp.conf
+  * Add d/libraft0.symbols
+
+  [ Free Ekanayaka ]
+  * Drop Lower-mipsel_malloc.patch, since upstream has dropped that code
+  * Build raft-benchmark and ship it in the raft-tools package
+
+  [ Mathias Gibbens ]
+  * d/control: Don't mark libraft-tools as Multi-Arch: same
+
+ -- Free Ekanayaka <freee@debian.org>  Thu, 19 Oct 2023 08:13:54 +0100
+
+raft (0.15.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update homepage location.
+  * Update watch file.
+  * Update Standards-Version to 4.6.1 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 28 Aug 2022 19:17:43 +0200
+
+raft (0.14.0-2) unstable; urgency=medium
+
+  * Backport fix for testing with new libuv1 versions (closes: #1016311).
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 09 Aug 2022 19:01:22 +0200
+
+raft (0.14.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Thu, 30 Jun 2022 21:21:47 +0200
+
+raft (0.13.0-2) unstable; urgency=medium
+
+  * Upload to Sid.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 07 May 2022 07:46:42 +0200
+
+raft (0.13.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from libraft0 to libraft2 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 24 Apr 2022 08:16:25 +0200
+
+raft (0.11.3-3) unstable; urgency=medium
+
+  * Even lower malloc size for testing on mipsel.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Fri, 28 Jan 2022 20:19:04 +0100
+
+raft (0.11.3-2) unstable; urgency=medium
+
+  * Backport fix for 32 bit architecture support.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 25 Jan 2022 06:58:49 +0100
+
+raft (0.11.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 22 Jan 2022 09:59:35 +0100
+
+raft (0.11.2+git211214-1) unstable; urgency=medium
+
+  * New git snapshot release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 27 Dec 2021 17:34:50 +0100
+
+raft (0.11.2+git211119-1) unstable; urgency=medium
+
+  * New git snapshot release.
+  * Update Standards-Version to 4.6.0 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Fri, 19 Nov 2021 18:41:25 +0100
+
+raft (0.11.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add watch file.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 13 Jun 2021 08:22:40 +0200
+
+raft (0.9.25-1) unstable; urgency=medium
+
+  * Initial release (closes: #970521).
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 15 Sep 2020 21:37:35 +0200

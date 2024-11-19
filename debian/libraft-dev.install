@@ -1,0 +1,4 @@
+usr/include/
+usr/lib/*/libraft.a
+usr/lib/*/libraft.so
+usr/lib/*/pkgconfig/

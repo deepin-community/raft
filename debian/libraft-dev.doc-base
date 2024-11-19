@@ -1,0 +1,9 @@
+Document: raft
+Title: C-Raft documentation
+Author: Canonical Ltd.
+Abstract: C-Raft is a fully asynchronous C implementation of the Raft consensus protocol
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/libraft-dev/index.html
+Files: /usr/share/doc/libraft-dev/*.html
